@@ -51,7 +51,11 @@ public class PosAvg extends MesoInherit{
 		}
 		return count + 1;
 	}
-	
+	/**
+	 * inherited method, no need to return the int array here, because the method is only changing the 
+	 * private arrayList stationPairs to find the station pairs that are the average of the index
+	 * @return null
+	 */
 	public int[] calAverage()  {
 		
 		this.statoinPairs[0] = this.totalStations[this.index - 2];
