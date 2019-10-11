@@ -64,9 +64,10 @@ public class PosAvg extends MesoInherit{
 	}
 	@Override
 	public String toString() {
-		String result = "This index is average of " + this.statoinPairs[0] + " and " + this.statoinPairs[1]
+		
+		return "This index is average of " + this.statoinPairs[0] + " and " + this.statoinPairs[1]
 		+ ", " + this.statoinPairs[2] + " and " + this.statoinPairs[3] + ", and so on.";
-		return result;
+		
 	}
 
 
