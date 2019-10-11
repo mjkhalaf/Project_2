@@ -1,7 +1,7 @@
-
 import java.io.IOException;
 
 public class PosAvg extends MesoInherit{
+	
 	/**
 	 * Array list for all the stations read from the file
 	 */
@@ -11,13 +11,20 @@ public class PosAvg extends MesoInherit{
 	private String[] statoinPairs = new String[4];
 	
 	
-	
+	/**
+	 * default constructor
+	 */
 	public PosAvg() 
 	{
 		this.stationID = "nothing";
 	
 	}
-	
+	/**
+	 * Class constructor that takes the parameter of a stationID. also creates a MesoInherit to access the list of 
+	 * station ID's. also invokes the method calAverage
+	 * @param stationID
+	 * @throws IOException
+	 */
 	public PosAvg(String stationID) throws IOException 
 	{
 		MesoInherit m = new MesoInherit(new MesoStation (super.getStationID()));
