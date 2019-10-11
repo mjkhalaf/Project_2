@@ -7,6 +7,9 @@ public class PosAvg extends MesoInherit{
 	 */
 	private String[] totalStations;
 	private String stationID;
+	/**
+	 * number order of the station ID in the list of stations
+	 */
 	private int index;
 	private String[] statoinPairs = new String[4];
 	
