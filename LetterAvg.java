@@ -1,8 +1,13 @@
 import java.io.IOException;
 import java.util.ArrayList;
-
+/**
+ * class extends MesoInherit to access the total stations read from the file
+ * @author m7md2
+ *
+ */
 public class LetterAvg extends MesoInherit {
-	
+	 
+	 
 	private char letAvg;
 	private String[] totalStations;
 	private ArrayList<String> letterStations = new ArrayList<>();
@@ -20,6 +25,7 @@ public class LetterAvg extends MesoInherit {
 		numberOfStationWithLetterAvg();
 	}
 	public int numberOfStationWithLetterAvg() {
+		
 		int count = 0;
 		this.letterStations = new ArrayList<>();
 		for (int i = 0 ; i < this.totalStations.length - 1; ++i) {
