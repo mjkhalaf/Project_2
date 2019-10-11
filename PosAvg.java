@@ -14,24 +14,25 @@ public class PosAvg extends MesoInherit{
 	
 	public PosAvg() 
 	{
-		stationID = "";
+		this.stationID = "nothing";
+	
 	}
 	
 	public PosAvg(String stationID) throws IOException 
 	{
 		MesoInherit m = new MesoInherit(new MesoStation (super.getStationID()));
 		this.totalStations = m.getTotalStations();
-		
 		this.stationID = stationID;
-		
 		this.index = indexOfStation();
 		
 		calAverage();
 	}
 	
 	public int indexOfStation() {
+		
 		int count = 0;
-		for (count =0; count < this.totalStations.length; ++count)
+		
+		for (count = 0; count < this.totalStations.length; ++count)
 		{
 			
 			if (this.stationID.equals(this.totalStations[count])) {
