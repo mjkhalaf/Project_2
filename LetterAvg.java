@@ -7,12 +7,14 @@ import java.util.ArrayList;
  */
 public class LetterAvg extends MesoInherit {
 	 
-	 
+	//private variable decleration
 	private char letAvg;
 	private String[] totalStations;
 	private ArrayList<String> letterStations = new ArrayList<>();
 	
-	
+	/**
+	 * default constructor
+	 */
 	public LetterAvg() {
 	}
 	
@@ -36,6 +38,11 @@ public class LetterAvg extends MesoInherit {
 		}
 		return count;
 	}
+	/**
+	 * a print toString method that overrides the default java method. prints the names of the stations
+	 * as shown in the project description
+	 * @return output string
+	 */
 	@Override
 	public String toString() {
 		String result = "\nThey are:" + "\n";
