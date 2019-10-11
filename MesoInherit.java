@@ -25,9 +25,11 @@ public class MesoInherit extends MesoAbstract{
 	 * @throws IOException
 	 */
 	public MesoInherit(MesoStation station) throws IOException {
+		
 		this.stationID = station.getStID();
 		this.totalStations = new String[1];
 		readFile();
+		
 	}
 	/**
 	 * read the data from the Mesnet File and storing them in the provate array
