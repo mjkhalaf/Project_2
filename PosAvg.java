@@ -34,7 +34,10 @@ public class PosAvg extends MesoInherit{
 		
 		calAverage();
 	}
-	
+	/**
+	 * calculating the index variable of the stationID
+	 * @return index of the station
+	 */
 	public int indexOfStation() {
 		
 		int count = 0;
