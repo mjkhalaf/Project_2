@@ -55,15 +55,19 @@ public class MesoInherit extends MesoAbstract{
 		//expand an array
 		while (currLine != null) {
 			
-			 
 			 temp = new String[totalStations.length + 1];
+			 
+			 //copying into totalStaitons
 			 for (int i = 0; i < totalStations.length; ++i) {
-				 temp[i] = totalStations[i];
+				 temp[i] = totalStations[i]; 
 			 }
 			 totalStations = temp;
+			 
+			 //getting stationID
 			 currLine = currLine.substring(1, 5);
 			 totalStations[index] = currLine;
 			 
+			 //changing the value of currLine to chack the while loop condition
 			 currLine = stationsList.readLine();
 			 ++index;
 		}
