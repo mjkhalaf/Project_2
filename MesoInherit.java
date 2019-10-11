@@ -4,19 +4,35 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class MesoInherit extends MesoAbstract{
-
+	
+	
 	private String stationID;
+	/**
+	 * list of stations being read from a file
+	 */
 	private String[] totalStations;
 	
+	/**
+	 * Default constructor
+	 */
 	public MesoInherit() {
 		
 	}
+	/**
+	 * MesoInherit constructor. initilizes the array list as well as the station ID it also invokes the readfile 
+	 * method
+	 * @param station
+	 * @throws IOException
+	 */
 	public MesoInherit(MesoStation station) throws IOException {
 		this.stationID = station.getStID();
 		this.totalStations = new String[1];
 		readFile();
 	}
-	
+	/**
+	 * read the data from the Mesnet File and storing them in the provate array
+	 * @throws IOException
+	 */
 	public void readFile() throws IOException 
 	{
 		
@@ -51,7 +67,9 @@ public class MesoInherit extends MesoAbstract{
 		}
 		stationsList.close();
 	}
-	
+	/**
+	 * gets the required ASCII values and their average and stores in an array 
+	 */
 	public int[] calAverage() {
 		
 		int charType[] = {this.stationID.charAt(0), this.stationID.charAt(1)
