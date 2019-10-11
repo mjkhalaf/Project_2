@@ -109,9 +109,6 @@ public class MesoInherit extends MesoAbstract{
 	public String getStationID() {
 		return stationID;
 	}
-	public void setStationID(String stationID) {
-		this.stationID = stationID;
-	}
 	public String[] getTotalStations() {
 		return totalStations;
 	}
