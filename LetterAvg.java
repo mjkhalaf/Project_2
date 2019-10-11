@@ -26,6 +26,13 @@ public class LetterAvg extends MesoInherit {
 		
 		numberOfStationWithLetterAvg();
 	}
+	
+	/**
+	 * looks through the list of stations and find the number of stations that begin with the same
+	 * letter as the one provided
+	 * @return number of stations the begin with letAvg
+	 */
+	
 	public int numberOfStationWithLetterAvg() {
 		
 		int count = 0;
