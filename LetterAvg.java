@@ -46,23 +46,25 @@ public class LetterAvg extends MesoInherit {
 		return count;
 	}
 	/**
-	 * a print toString method that overrides the default java method. prints the names of the stations
+	 * print toString method that overrides the default java method. prints the names of the stations
 	 * as shown in the project description
 	 * @return output string
 	 */
 	@Override
 	public String toString() {
-		String result = "\nThey are:" + "\n";
+		String output = "\nThey are:" + "\n";
 		for (int i = 0; i < this.letterStations.size(); ++i) {
+			
 			if ( i == this.letterStations.size() - 1) {
-				result += this.letterStations.get(i);
+				output += this.letterStations.get(i);
 			}
 			else {
-			result += this.letterStations.get(i) + "\n";
+			output += this.letterStations.get(i) + "\n";
 			}
+			
 		}
 		
-		return result;
+		return output;
 	}
 
 }
