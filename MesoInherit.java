@@ -97,7 +97,9 @@ public class MesoInherit extends MesoAbstract{
 		return output;
 	}
 
-	
+	/**
+	 * letter average of the station id
+	 */
 	public char letterAverage() {
 		
 		int[] temp = calAverage();
@@ -113,10 +115,7 @@ public class MesoInherit extends MesoAbstract{
 	public String[] getTotalStations() {
 		return totalStations;
 	}
-	public void setTotalStations(String[] totalStations) {
-		this.totalStations = totalStations;
-	}
-
+	
 
 
 	
